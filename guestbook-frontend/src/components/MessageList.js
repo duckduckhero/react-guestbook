@@ -17,7 +17,7 @@ function MessageList() {
                 setMessages(null);
 
                 setLoading(true);
-                const response = await axios.get('localhost:80/message/read');
+                const response = await axios.get('http://localhost:80/message/read');
                 setMessages(response.data);
 
             } catch(e) {
@@ -36,7 +36,11 @@ function MessageList() {
     if(!messages) return(null); 
     return(
         <div>
-            {messages}
+
+            {messages.data.map(message => (
+                <MessageItem username={message.username} message={message.message} date={message.date} key={message.message_id}/>
+            ))}
+
         </div>
     )
 }

@@ -1,10 +1,11 @@
 import React from 'react'; 
 
-function MessageItem() {
+function MessageItem({username, message, date}) {
     return (
         <div>
-            <h5>name : anonymous</h5>
-            <h5>덕행아 안녕 잘 살지? ㅎㅎㅎ </h5>
+            <h5>name : {username}</h5>
+            <h5>message : {message} </h5>
+            <h5>date : {date}</h5>
         </div>
     );
 }
