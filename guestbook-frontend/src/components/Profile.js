@@ -4,8 +4,11 @@ import './Profile.css'
 function Profile() {
     return(
         <div className="profileInfo"> 
-            <h1>name : Deokhaeng "Duck" Lee</h1>
-            <h2>bio: "el psy congroo"</h2>
+            <div className="profileContent">
+                <h1>2019년 7월 10일</h1>
+                <div className="day">수요일</div>
+                <div className="tasks-left">할 일 2개 남음</div>
+            </div>
         </div>
     );
 }
