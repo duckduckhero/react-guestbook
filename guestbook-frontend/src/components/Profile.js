@@ -1,13 +1,12 @@
 import React from 'react'; 
-import './Profile.css'
 
 function Profile() {
     return(
-        <div className="profileInfo"> 
-            <div className="profileContent">
+        <div> 
+            <div class="bg-white rounded-xl max-w-xl mx-auto p-6 my-8">
                 <h1>2019년 7월 10일</h1>
-                <div className="day">수요일</div>
-                <div className="tasks-left">할 일 2개 남음</div>
+                <div>수요일</div>
+                <div>할 일 2개 남음</div>
             </div>
         </div>
     );

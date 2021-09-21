@@ -4,6 +4,7 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Profile from './components/Profile';
 import Messageboard from './components/Messageboard';
+import TailwindTest from './components/TailwindTest';
 import Nav from './components/Nav';
 
 ReactDOM.render(
@@ -11,6 +12,7 @@ ReactDOM.render(
     <Nav />
     <Profile />
     <Messageboard />
+    <TailwindTest />
   </div>,
   document.getElementById('root')
 );
