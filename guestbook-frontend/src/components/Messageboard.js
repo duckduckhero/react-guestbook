@@ -1,5 +1,4 @@
 import React, { useRef, useState, useEffect } from 'react';
-import './Messageboard.css'
 import MessageList from './MessageList';
 import axios from 'axios';
 
@@ -58,7 +57,7 @@ function Messageboard() {
 
     
     return(
-        <div className="messageBoard">
+        <div className="messageBoard" class="bg-white rounded-xl max-w-xl mx-auto shadow p-6 my-9"> 
             <div className="messageBox">  
                 <input placeholder="name" ref={nameInput}/>
                 <input placeholder="message" ref={messageInput}/>

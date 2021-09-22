@@ -9,10 +9,8 @@ import Nav from './components/Nav';
 
 ReactDOM.render(
   <div>
-    <Nav />
     <Profile />
     <Messageboard />
-    <TailwindTest />
   </div>,
   document.getElementById('root')
 );
