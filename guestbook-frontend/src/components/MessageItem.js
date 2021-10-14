@@ -7,6 +7,7 @@ function MessageItem({username, message, date}) {
             <h5>message : {message} </h5>
             <h5>date : {date}</h5>
         </div>
+        
     );
 }
 

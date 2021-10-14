@@ -10,7 +10,10 @@ function MessageList({loading, error, messages}) {
     return(
         <div>
             {messages.data.map(message => (
-                <MessageItem username={message.username} message={message.message} date={message.date} key={message.message_id}/>
+                <div>
+                    <MessageItem username={message.username} message={message.message} date={message.date} key={message.message_id}/>
+                    <br></br>
+                </div>
             ))}
         </div>
     )

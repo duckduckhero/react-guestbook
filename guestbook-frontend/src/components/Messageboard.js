@@ -58,11 +58,14 @@ function Messageboard() {
     
     return(
         <div className="messageBoard" class="bg-white rounded-xl max-w-xl mx-auto shadow p-6 my-9"> 
-            <div className="messageBox">  
-                <input placeholder="name" ref={nameInput}/>
-                <input placeholder="message" ref={messageInput}/>
-                <button onClick={addMessages}>submit</button>
+            <div className="messageBox flex">  
+                <input class="flex-shrink-0 mr-9" placeholder="name" ref={nameInput}/>
+                <input class="flex-shrink-0 mr-9" placeholder="message" ref={messageInput}/>
+                <button onClick={addMessages} class="bg-blue-500 hover:bg-blue-700 text-white font-light py-2 px-4 rounded">
+                    Submit
+                </button>
             </div>
+            <br></br>
             <MessageList error={error} loading={loading} messages={messages}/>
         </div>
     );

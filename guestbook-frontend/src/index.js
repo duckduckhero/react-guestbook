@@ -2,16 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import Profile from './components/Profile';
-import Messageboard from './components/Messageboard';
-import TailwindTest from './components/TailwindTest';
-import Nav from './components/Nav';
+import { BrowserRouter } from 'react-router-dom';
+import App from './App';
 
 ReactDOM.render(
-  <div>
-    <Profile />
-    <Messageboard />
-  </div>,
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
   document.getElementById('root')
 );
 
