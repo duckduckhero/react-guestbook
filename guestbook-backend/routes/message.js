@@ -23,7 +23,7 @@ router.post('/add', async (req, res) => {
 
 router.get('/read', async (req, res) => {
 
-    let selectMessageQ = "SELECT * FROM messages"; 
+    let selectMessageQ = "SELECT * FROM messages ORDER BY message_id DESC"; 
     let selectMessageResult = await pool.query(selectMessageQ); 
 
     res.header("Access-Control-Allow-Origin", "*");

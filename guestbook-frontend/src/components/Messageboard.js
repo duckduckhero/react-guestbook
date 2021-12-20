@@ -11,6 +11,8 @@ function Messageboard() {
     const nameInput = useRef();
     const messageInput = useRef(); 
 
+    //this will be a test!
+
    
 
     //메시지 불러오기 위한 함수 
@@ -57,6 +59,7 @@ function Messageboard() {
 
     
     return(
+        
         <div className="messageBoard" class="bg-white rounded-xl max-w-xl mx-auto shadow p-6 my-9"> 
             <div className="messageBox flex">  
                 <input class="flex-shrink-0 mr-9" placeholder="name" ref={nameInput}/>
